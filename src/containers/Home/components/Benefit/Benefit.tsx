@@ -1,27 +1,10 @@
 import { FunctionComponent } from 'react';
-import styled from '@emotion/styled';
-
+import { Stack, Text } from '@chakra-ui/react';
 
 export const Benefit: FunctionComponent = () => {
   return (
-    <Container>
-      <Text>Lender Benefit</Text>
-    </Container>
+    <Stack w='311px' h='27px' bg='#ECEAF2' borderRadius='24px' px='17px' justifyContent='center'>
+      <Text fontSize='16px' fontWeight='700' color='#7B5BE4'>Lender Benefit</Text>
+    </Stack>
   );
 };
-
-const Container = styled.div`
-  width: 311px;
-  height: 27px;
-  background: #ECEAF2;
-  border-radius: 24px;
-  padding: 0 20px;
-  margin: 20px 0;
-`;
-
-const Text = styled.div`
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  color: #7B5BE4;
-`;

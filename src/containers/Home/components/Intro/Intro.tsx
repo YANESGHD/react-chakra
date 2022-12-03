@@ -1,68 +1,40 @@
 import { FunctionComponent } from 'react';
-import styled from '@emotion/styled';
 import { FmdGoodOutlined } from '@mui/icons-material';
+import { Stack, HStack, Text } from '@chakra-ui/react';
 
 export const Intro: FunctionComponent = () => {
   return (
-    <Container>
-      <TextContainer>
-        <Title>Revenue Based Financing</Title>
-        <Text>By Lendistry</Text>
+    <Stack
+      width='100%'
+      border='2.25px solid #868686'
+      borderRadius='12px'
+      boxShadow='0px 4px 4px rgba(0, 0, 0, 0.25)'
+    >
+      <Stack py='18px' px='24px'>
+        <Text fontSize='24px' fontWeight='700' pb='10px'>
+          Revenue Based Financing
+        </Text>
+        <Text fontSize='16px' fontWeight='600'>
+          By Lendistry
+        </Text>
 
-        <LocationContainer>
+        <HStack>
           <FmdGoodOutlined />
-          <Text>Location</Text>
-        </LocationContainer>
-        
-        <SmallText>Get funded in 12 days.</SmallText>
-      </TextContainer>
+          <Text fontSize='16px' fontWeight='600'>
+            Location
+          </Text>
+        </HStack>
 
-      <PriceText>$10,000 - $1,000,000</PriceText>
-    </Container>
+        <Text fontSize='14px' fontWeight='600'>
+          Get funded in <b>12 days.</b>
+        </Text>
+      </Stack>
+
+      <Stack borderTop='2.25px solid #868686' py='15px' px='24px'>
+        <Text fontSize='22px' fontWeight='700' color='#7B5BE4'>
+          $10,000 - $1,000,000
+        </Text>
+      </Stack>
+    </Stack>
   );
 };
-
-const Container = styled.div`
-  width: 432px;
-  height: auto;
-  background: #FFFFFF;
-  border: 2.25px solid #868686;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
-`;
-
-const Title = styled.h1`
-  font-size: 20px;
-  font-weight: 700;
-  padding-bottom: 15px;
-`;
-
-const Text = styled.p`
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 30px;
-`;
-
-const SmallText = styled.p`
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 30px;
-`;
-
-const LocationContainer = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-const PriceText = styled.h3`
-  border-top: 2.25px solid #868686;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 30px;
-  padding: 10px 15px;
-  color: #7B5BE4;
-`;
-
-const TextContainer = styled.div`
-  padding: 20px;
-`;

@@ -1,22 +1,12 @@
 import { FunctionComponent } from 'react';
 import { Intro, About } from './components';
-import styled from '@emotion/styled';
+import { Stack } from '@chakra-ui/react';
 
 export const Home: FunctionComponent = () => {
   return (
-    <Container>
+    <Stack w='432px' border='2px solid #C8C6C6' borderRadius='12px'>
       <Intro />
       <About />
-    </Container>
+    </Stack>
   );
 };
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 432px;
-  border: 2px solid #C8C6C6;
-  border-radius: 12px;
-`;
