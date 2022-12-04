@@ -7,7 +7,7 @@ interface BenefitProps {
 
 export const Benefit: FunctionComponent<BenefitProps> = ({ title }) => {
   return (
-    <Stack maxWidth='311px' maxHeight='27px' bg='#ECEAF2' borderRadius='24px' px='17px' justify='center'>
+    <Stack width='311px' height='27px' bg='#ECEAF2' borderRadius='24px' px='17px' justify='center'>
       <Heading fontSize='16px' fontWeight='bold'  color='#7B5BE4'>{title}</Heading>
     </Stack>
   );
