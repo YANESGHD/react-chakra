@@ -3,16 +3,16 @@ import { extendTheme, theme as base } from '@chakra-ui/react';
 export const theme = extendTheme({
   fonts: {
     heading: `Open Sans, ${base.fonts?.heading}`,
-    body: `Open Sans, ${base.fonts?.body}`
+    body: `Open Sans, ${base.fonts?.body}`,
   },
   components: {
     Button: {
       variants: {
         primary: {
           maxHeight: '32px',
-          maxWidth:'130px',
+          maxWidth: '130px',
           color: 'white',
-          bg: { base:'#020202', xl:'#0051FF'},
+          bg: { base: '#020202', xl: '#0051FF' },
           borderRadius: '6px',
         },
         badge: {
@@ -26,9 +26,9 @@ export const theme = extendTheme({
           justifyItems: 'center',
           position: 'absolute',
           right: ['20%', '25%', '38%'],
-          cursor: 'default'
-        }
-      }
-    }
+          cursor: 'default',
+        },
+      },
+    },
   },
 });

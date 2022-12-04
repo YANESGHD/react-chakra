@@ -1,17 +1,17 @@
 interface Benefits {
-  title: string,
-  description: string
+  title: string;
+  description: string;
 }
 
 export interface Lender {
-  name: string,
-  lendistry: string,
-  location: string,
-  fundedIn: string,
-  fundMinimum: string,
-  fundMaximum: string
+  name: string;
+  lendistry: string;
+  location: string;
+  fundedIn: string;
+  fundMinimum: string;
+  fundMaximum: string;
   about: {
-    description: string,
-    benefits: Benefits[]
-  }
+    description: string;
+    benefits: Benefits[];
+  };
 }
