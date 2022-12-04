@@ -9,13 +9,13 @@ export const theme = extendTheme({
     Button: {
       variants: {
         primary: {
+          maxHeight: '32px',
+          maxWidth:'130px',
           color: 'white',
-          bg: { sm:'#020202', xl:'#0051FF'},
+          bg: { base:'#020202', xl:'#0051FF'},
           borderRadius: '6px',
-          h: '32px',
-          w:'130px'
         },
-        secondary: {
+        badge: {
           h: '24px',
           w: '121px',
           color: 'white',
@@ -25,7 +25,7 @@ export const theme = extendTheme({
           fontWeight: 'semibold',
           justifyItems: 'center',
           position: 'absolute',
-          right: '38%',
+          right: ['20%', '25%', '38%'],
           cursor: 'default'
         }
       }

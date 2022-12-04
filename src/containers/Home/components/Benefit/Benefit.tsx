@@ -1,10 +1,14 @@
 import { FunctionComponent } from 'react';
-import { Stack, Text } from '@chakra-ui/react';
+import { Stack, Heading } from '@chakra-ui/react';
 
-export const Benefit: FunctionComponent = () => {
+interface BenefitProps {
+  title: string
+}
+
+export const Benefit: FunctionComponent<BenefitProps> = ({ title }) => {
   return (
-    <Stack w='311px' h='27px' bg='#ECEAF2' borderRadius='24px' px='17px' justify='center'>
-      <Text fontSize='16px' fontWeight='bold'  color='#7B5BE4'>Lender Benefit</Text>
+    <Stack maxWidth='311px' maxHeight='27px' bg='#ECEAF2' borderRadius='24px' px='17px' justify='center'>
+      <Heading fontSize='16px' fontWeight='bold'  color='#7B5BE4'>{title}</Heading>
     </Stack>
   );
 };
