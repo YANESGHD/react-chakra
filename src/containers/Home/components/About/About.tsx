@@ -8,7 +8,11 @@ export const About: FunctionComponent = () => {
 
   return (
     <>
-      {isLoading && 'Loading...'}
+      {isLoading && (
+        <Stack width='432px' height='350px' justify='center' align='center'>
+          <Text>Loading...</Text>
+        </Stack>
+      )}
       {!isLoading && (
         <Stack px='24px' py='35px'>
           <HStack justify='space-between' align='center' pb='15px'>

@@ -7,15 +7,19 @@ export const Intro: FunctionComponent = () => {
   const { isLoading, lender } = useLender();
 
   return (
-    <>
-      {isLoading && 'Loading...'}
+    <Stack
+      w='100%'
+      border='2.25px solid #868686'
+      borderRadius='12px'
+      boxShadow='0px 4px 4px rgba(0, 0, 0, 0.25)'
+    >
+      {isLoading && (
+        <Stack width='432px' height='200px' justify='center' align='center'>
+          <Text>Loading...</Text>
+        </Stack>
+      )}
       {!isLoading && (
-        <Stack
-          w='100%'
-          border='2.25px solid #868686'
-          borderRadius='12px'
-          boxShadow='0px 4px 4px rgba(0, 0, 0, 0.25)'
-        >
+        <>
           <Stack py='18px' px='24px'>
             <Heading fontSize={[16, 20, 24]} fontWeight='700' pb='10px'>
               {lender?.name}
@@ -41,8 +45,8 @@ export const Intro: FunctionComponent = () => {
               ${lender?.fundMinimum} - ${lender?.fundMaximum}
             </Text>
           </Stack>
-        </Stack>
+        </>
       )}
-    </>
+    </Stack>
   );
 };
