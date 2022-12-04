@@ -1,27 +1,29 @@
 import { FunctionComponent } from 'react';
 import { Benefit } from '..';
-import { Button, Stack, HStack, Text } from '@chakra-ui/react';
+import { Button, Stack, HStack, Heading, Text } from '@chakra-ui/react';
 
 export const About: FunctionComponent = () => {
   return (
     <Stack px='24px' py='35px'>
-      <HStack justifyContent='space-between' alignItems='center' pb='15px'>
-        <Text fontSize='20px' fontWeight='700'>
+      <HStack justify='space-between' align='center' pb='15px'>
+        <Heading fontSize='20px' fontWeight='bold'>
           About the Lender
-        </Text>
-        <Button h='32px' w='130px' bg='#020202' color='white' borderRadius='6px' _hover={{ bg: "blue" }}>
+        </Heading>
+        <Button variant='primary'>
           Learn More
         </Button>
       </HStack>
       
-      <Text fontSize='16px' fontWeight='400' pb='20px'>
+      <Text fontSize='16px' fontWeight='normal' pb='20px'>
         Fill with Lorem ipsum dhfe ndwufiu fheh u2en i19h ueu2 0 he ns asabsqh
         sw whhdi dw ppwd euy4h dbdjq jeeoi nd.
       </Text>
-      
-      <Benefit />
-      <Benefit />
-      <Benefit />
+
+      <Stack spacing={5} pt='10px'>
+        <Benefit />
+        <Benefit />
+        <Benefit />
+      </Stack>
     </Stack>
   );
 };
