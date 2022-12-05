@@ -36,7 +36,7 @@ export const Intro: FunctionComponent = () => {
             </HStack>
 
             <Text fontSize='14px' fontWeight='semibold'>
-              Get funded in <b>{lender?.fundedIn}.</b>
+              Get Funded in <b>{lender?.fundedIn}.</b>
             </Text>
           </Stack>
 
